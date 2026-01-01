@@ -11,6 +11,7 @@ source:
   url: https://pypi.org/packages/source/r/responder/responder-${{ version }}.tar.gz
   sha256: 23a8f4b0136f74c272d187eb888a16e0b3fe4434881abfb60efecb71d78f6934
   patches:
+    # this enables to use the latest starlette, remove on next release
     - patch_starlette_middleware_exceptions_import.patch
 
 build:
