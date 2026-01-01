@@ -21,10 +21,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python ${{ python_min }}.*
     - pip
+    - setuptools
   run:
-    - python >=3.6
+    - python >=${{ python_min }},<4.0.0
     - aiofiles
     - apispec >=1.0.0b1
     - apistar
@@ -48,7 +49,7 @@ tests:
   - python:
       imports:
         - responder
-      pip_check: false
+      pip_check: true
       python_version: ${{ python_min }}.*
   - script:
       - responder --help
