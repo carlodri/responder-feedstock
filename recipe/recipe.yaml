@@ -41,7 +41,7 @@ requirements:
     - requests
     - requests-toolbelt
     - rfc3986
-    - starlette
+    - starlette-full
     - uvicorn
     - whitenoise
 
