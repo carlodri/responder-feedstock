@@ -1,0 +1,13 @@
+diff --git a/responder/api.py b/responder/api.py
+index 5a5cf4e..b5ae3d3 100644
+--- a/responder/api.py
++++ b/responder/api.py
+@@ -5,7 +5,7 @@ from pathlib import Path
+ 
+ import jinja2
+ import uvicorn
+-from starlette.exceptions import ExceptionMiddleware
++from starlette.middleware.exceptions import ExceptionMiddleware
+ from starlette.middleware.wsgi import WSGIMiddleware
+ from starlette.middleware.errors import ServerErrorMiddleware
+ from starlette.middleware.cors import CORSMiddleware
